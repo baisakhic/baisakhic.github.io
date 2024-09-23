@@ -47,6 +47,7 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
+		<!--
         {% if page.citation and page.paperurl and page.slidesurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
         {% elsif page.citation and page.paperurl %}
@@ -58,6 +59,31 @@ layout: default
         {% elsif page.slidesurl %}
           <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
         {% endif %}
+		-->
+		
+		{% if page.citation and page.paperurl and page.slidesurl and page.paperlink %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.paperlink }}">Go to Article</a></p>
+		{% elsif page.citation and page.paperurl and page.slidesurl %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
+		{% elsif page.citation and page.paperurl and page.paperlink %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.paperlink }}">Go to Article</a></p>
+		{% elsif page.citation and page.slidesurl and page.paperlink %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.paperlink }}">Go to Article</a></p>
+		{% elsif page.citation and page.paperurl %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a></p>
+		{% elsif page.citation and page.slidesurl %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a></p>
+		{% elsif page.citation and page.paperlink %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperlink }}">Go to Article</a></p>
+		{% elsif page.citation %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}</p>
+		{% elsif page.paperlink %}
+		  <p style="font-size: smaller"><a href=" {{ page.paperlink }} ">Go to Article</a></p>
+		{% elsif page.paperurl %}
+		  <p style="font-size: smaller"><a href=" {{ page.paperurl }} ">Download Paper</a></p>
+		{% elsif page.slidesurl %}
+		  <p style="font-size: smaller">Download <a href="{{ page.slidesurl }}">Download Slides</a></p></p>
+		{% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
