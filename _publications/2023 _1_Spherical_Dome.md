@@ -2,7 +2,8 @@
 title: "Cooperative UAV Trajectory Planning for Plume Wrapping of a Spherical Dome"
 collection: publications
 category: publications
-permalink: https://ieeexplore.ieee.org/abstract/document/10469369
+permalink: cooperative_uav_trajectory
+paperlink: https://ieeexplore.ieee.org/abstract/document/10469369
 excerpt: 'In this paper, we have modified our previous work on Plume Wrapping in order to allow agents to make corrective action based on the shape of the Plume. In case of contaminants falling to the ground due to the particles being heavier than air, agents can modify their initial assmptions when encountering altitudes that violate safety considerations.'
 date: 2023-12-18
 venue: 'IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS)'
