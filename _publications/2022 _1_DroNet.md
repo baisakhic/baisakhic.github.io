@@ -7,6 +7,7 @@ excerpt: 'In this paper, have studied the dependance of message on coordinated m
 date: 2023-12-18
 venue: 'Proceedings of the 2022 workshop on Eighth Workshop on Micro Aerial Vehicle Networks, Systems, and Applications'
 slidesurl: 'http://baisakhic.github.io/files/DroNet-Slides.pptx'
+paperurl: 'http://baisakhic.github.io/files/DroNet-Paper.pdf'
 citation: 'B. Chatterjee and R. Dutta , &quot;Studying the Effect of Network Latency on an Adaptive Coordinated Path Planning Algorithm for UAV Platoons,&quot; <i> Proceedings of the 2022 workshop on Eighth Workshop on Micro Aerial Vehicle Networks, Systems, and Applications. ACM, Portland, OR, USA, 2022, pp. 7-12,</i> doi: 10.1145/3539493.3539581.'
 ---
 
