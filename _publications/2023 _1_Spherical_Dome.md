@@ -1,5 +1,5 @@
 ---
-title: "Guaranteeing Partial State Synchronization for UAV Platoon Under Message or UAV Loss"
+title: "Cooperative UAV Trajectory Planning for Plume Wrapping of a Spherical Dome"
 collection: publications
 category: publications
 permalink: https://ieeexplore.ieee.org/abstract/document/10469369
