@@ -21,7 +21,7 @@ repository               : "baisakhic/baisakhic.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profile.jpeg"
   name             : "Baisakhi"
   pronouns         : "she/her"  
   bio              : "PhD Candidate with extensive research background in coordinated task planning by autonomous agent groups"
