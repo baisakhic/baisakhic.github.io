@@ -1,6 +1,7 @@
 ---
 title: "Parameter Training in MANET using Artificial Neural Network"
 collection: publications
+category: publications
 permalink: https://www.mecs-press.org/ijcnis/ijcnis-v11-n9/v11n9-1.html
 excerpt: 'Implemented Artificial Neural Network to train parameters for clustering-based routing protocol for MANETs, thus configuring message paths which try to maximize network lifespan by selecting agents with maximum remaining energy while limiting distance-based path cost.'
 date: 2019-09-08

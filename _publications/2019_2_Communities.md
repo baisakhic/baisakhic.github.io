@@ -1,6 +1,7 @@
 ---
 title: "Detection of Communities in Large Scale Networks"
 collection: publications
+category: publications
 permalink: https://ieeexplore.ieee.org/abstract/document/8936304
 excerpt: 'Sureveyed research works on Community Dectection in Large Scale Networks and cateogorized the results into different groups.'
 date: 2019-10-17
