@@ -1,7 +1,7 @@
 ---
 title: "Quantum Entanglement Simulator"
 collection: projects
-category: course
+category: NCSU
 permalink: projects/Quantum
 excerpt: 'Designed a simulated Quantum Network that demonstrated entanglement of photons with 90% fidelity for non-mixed pairs'
 paperurl: 'http://baisakhic.github.io/files/QuantumReport.pdf'
