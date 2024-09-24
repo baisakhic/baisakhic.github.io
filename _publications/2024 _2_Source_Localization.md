@@ -3,7 +3,7 @@ title: "Wireless Signal Source Localization by Unmanned Aerial Vehicle using AER
 collection: publications
 category: publications
 permalink: wireless_signal_source
-paperlink: https://par.nsf.gov/biblio/10531564-wireless-signal-source-localization-unmanned-aerial-vehicle-using-aerpaw-digital-twin-testbed
+link: https://par.nsf.gov/biblio/10531564-wireless-signal-source-localization-unmanned-aerial-vehicle-using-aerpaw-digital-twin-testbed
 excerpt: 'In this paper we have validated the AERPAW testbed and demonstrated how it can be utilized in verifying theoretical resarch in the real world using actual UAVs and UAV. To do this, we have developed a Source Localization algorithm where a UAV estimates the location of a Ground Rover based on the strength of the signal it emits.'
 date: 2024-06-03
 venue: 'IFIP Networking Conference (IFIP Networking)'

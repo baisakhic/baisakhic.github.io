@@ -4,7 +4,6 @@ collection: projects
 category: course
 permalink: projects/Quantum
 excerpt: 'Designed simulated Quantum Network that demonstrated entanglement of photons with 90% fidelity for non-mixed pairs'
-date: 2022-12-08
 paperurl: 'http://baisakhic.github.io/files/IFIP-Paper.pdf'
 
 ---
