@@ -61,24 +61,24 @@ layout: default
         {% endif %}
 		-->
 		
-		{% if page.citation and page.paperurl and page.slidesurl and page.paperlink %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.paperlink }}">Go to Article</a></p>
+		{% if page.citation and page.paperurl and page.slidesurl and page.gitlink %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.gitlink }}">Github Link</a></p>
 		{% elsif page.citation and page.paperurl and page.slidesurl %}
 		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
-		{% elsif page.citation and page.paperurl and page.paperlink %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.paperlink }}">Go to Article</a></p>
-		{% elsif page.citation and page.slidesurl and page.paperlink %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.paperlink }}">Go to Article</a></p>
+		{% elsif page.citation and page.paperurl and page.gitlink %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.gitlink }}">Github Link</a></p>
+		{% elsif page.citation and page.slidesurl and page.gitlink %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.gitlink }}">Github Link</a></p>
 		{% elsif page.citation and page.paperurl %}
 		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a></p>
 		{% elsif page.citation and page.slidesurl %}
 		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a></p>
-		{% elsif page.citation and page.paperlink %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperlink }}">Go to Article</a></p>
+		{% elsif page.citation and page.gitlink %}
+		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.gitlink }}">Github Link</a></p>
 		{% elsif page.citation %}
 		  <p style="font-size: smaller">Citation: {{ page.citation }}</p>
-		{% elsif page.paperlink %}
-		  <p style="font-size: smaller"><a href=" {{ page.paperlink }} ">Go to Article</a></p>
+		{% elsif page.gitlink %}
+		  <p style="font-size: smaller"><a href=" {{ page.gitlink }} ">Github Link</a></p>
 		{% elsif page.paperurl %}
 		  <p style="font-size: smaller"><a href=" {{ page.paperurl }} ">Download Paper</a></p>
 		{% elsif page.slidesurl %}

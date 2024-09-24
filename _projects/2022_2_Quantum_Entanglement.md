@@ -3,8 +3,8 @@ title: "Quantum Entanglement Simulator"
 collection: projects
 category: course
 permalink: projects/Quantum
-excerpt: 'Designed simulated Quantum Network that demonstrated entanglement of photons with 90% fidelity for non-mixed pairs'
-paperurl: 'http://baisakhic.github.io/files/IFIP-Paper.pdf'
+excerpt: 'Designed a simulated Quantum Network that demonstrated entanglement of photons with 90% fidelity for non-mixed pairs'
+paperurl: 'http://baisakhic.github.io/files/QuantumReport.pdf'
 
 ---
 

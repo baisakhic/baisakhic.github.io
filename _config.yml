@@ -21,7 +21,7 @@ repository               : "baisakhic/baisakhic.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpeg"
+  avatar           : "profile.jpg"
   name             : "Baisakhi"
   pronouns         : "she/her"  
   bio              : "PhD Candidate with extensive research background in coordinated task planning by autonomous agent groups"
@@ -87,8 +87,10 @@ publication_category:
 
 # Project Category - The following the list of project categories and their headings
 project_category:
-  course:
-    title: 'Course Projects'
+  NCSU:
+    title: 'Graduate Course Projects'
+  IEM:
+    title: 'Undergraduate Course Projects'
   personal:
     title: 'Personal Projects'    
 
