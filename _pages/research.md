@@ -4,7 +4,7 @@ title: "Research"
 permalink: /research/
 author_profile: true
 ---
-<hr style="height:1px;border:none;color:#333;background-color:#333;"/>
+<hr/>
 {% include base_path %}
 
 Unmanned Aerial Vehicles (UAV) are surging in popularity as a result of the versatility of their usage. The FAA estimates that millions of autonomous UAVs will soon take to the skies, performing various tasks, both individually and in groups. With a dense network of vehicles expected, dynamic planning based on real-time sensed data is of vital importance. The FAA has proposed UAS Traffic Management (UTM) as an overarching framework in order to ensure safe and secure mission planning which maintains equitable use of the National Airspace System (NAS). 

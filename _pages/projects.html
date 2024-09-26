@@ -4,7 +4,7 @@ title: "Projects"
 permalink: /projects/
 author_profile: true
 ---
-<hr style="height:1px;border:none;color:#333;background-color:#333;"/>
+<hr/>
 {% include base_path %}
 
 <!-- New style rendering if projects categories are defined -->
@@ -16,7 +16,7 @@ author_profile: true
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+        <h2>{{ category[1].title }}</h2><hr style="line-style:dashed"/>
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single.html %}

@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<hr style="height:1px;border:none;color:#333;background-color:#333;"/>
+<hr/>
 
 I am a PhD Candidate at [North Carolina State University](https://www.ncsu.edu/) in the [Computer Science Department](https://www.csc.ncsu.edu/), currently working with [Dr.Rudra Dutta](https://dutta.wordpress.ncsu.edu/). My research focuses on communication and coordination in multi-UAV (Unmanned Aerial Vehicle) groups. UAVs are surging in popularity as a result of the versatility of their usage and the FAA estimates that millions of autonomous UAVs will soon take to the skies. 
 
