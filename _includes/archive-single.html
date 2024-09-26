@@ -50,9 +50,9 @@
         {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    <p style="margin-top: -20px;" class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    <p style="margin-top: -20px;" class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
 	<!--
@@ -82,11 +82,11 @@
 	-->
 	
 	{% if post.paperurl and post.slidesurl %}
-      <p style="font-size: smaller"><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
+      <p style="font-size: smaller; margin-top: -20px;"><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.paperurl%}
-      <p style="font-size: smaller"><a href="{{ post.paperurl }}">Download Paper</a></p>
+      <p style="font-size: smaller; margin-top: -20px;"><a href="{{ post.paperurl }}">Download Paper</a></p>
 	{% elsif post.slidesurl%}
-      <p style="font-size: smaller">Download <a href="{{ post.slidesurl }}">Download Slides</a></p></p>
+      <p style="font-size: smaller; margin-top: -20px;">Download <a href="{{ post.slidesurl }}">Download Slides</a></p></p>
 	{% endif %}
 	
   </article>
