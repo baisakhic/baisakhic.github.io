@@ -2,7 +2,7 @@
 title: "Shining Star Award"
 collection: engagement
 category: award
-org: NRI Fintech, Kolkata, India
+org: Nomura Research Institute Finanical Technologies (NRIFT), Kolkata, India
 date: 2020-09-01
 
 ---
