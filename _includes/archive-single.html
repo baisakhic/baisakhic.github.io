@@ -45,7 +45,7 @@
 	{% if post.collection == 'teaching' %}
 	  <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
 	{% elsif post.collection == 'publications' %}
-	  <p style="font-size: smaller; margin-top: -5px"><b><i>{{ post.venue }}</i></b>, <b>{{ post.date | default: "1900-01-01" | date: "%Y" }}<\b> </p>
+	  <p style="font-size: smaller; margin-top: -5px"><b><i>{{ post.venue }}</i></b>, <b>{{ post.date | default: "1900-01-01" | date: "%Y" }}</b> </p>
 	{% elsif post.collection == 'projects' and post.date %}
        <p style="font-size: smaller; margin-top: -5px"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
 	{% elsif post.date %}
