@@ -1,6 +1,6 @@
 ---
-title: "Vice President"
-subtitle: "Computer Science Graduate Student Assoication"
+title: "PhD Recruitment Volunteer"
+subtitle: "Computer Science Department"
 collection: engagement
 category: leadership
 org: North Carolina State University, Raleigh, NC
