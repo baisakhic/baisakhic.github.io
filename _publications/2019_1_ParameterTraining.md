@@ -1,7 +1,7 @@
 ---
 title: "Parameter Training in MANET using Artificial Neural Network"
 collection: publications
-category: publications
+category: publications/parameter_training
 link: https://www.mecs-press.org/ijcnis/ijcnis-v11-n9/v11n9-1.html
 permalink: parameter_training_MANET
 excerpt: 'Implemented Artificial Neural Network to train parameters for clustering-based routing protocol for MANETs, thus configuring message paths which try to maximize network lifespan by selecting agents with maximum remaining energy while limiting distance-based path cost.'
@@ -12,4 +12,4 @@ citation: 'B. Chatterjee and H.N. Saha , &quot;Parameter Training in MANET using
 ---
 
 
-The study of convenient methods of information dissemination has been a vital research area for years. Mobile ad hoc networks (MANET) have revolutionized our society due to their self-configuring, infrastructure-less decentralized modes of communication and thus researchers have focused on finding better and better ways to fully utilize the potential of MANETs. The recent advent of modern machine learning techniques has made it possible to apply artificial intelligence to develop better protocols for this purpose. In this paper, we expand our previous work which developed a clustering algorithm that used weight-based parameters to select cluster heads and use Artificial Neural Network to train a model to accurately predict the scale of the weights required for different network topologies.
+The study of convenient methods of information dissemination has been a vital research area for years. Mobile ad hoc networks (MANET) have revolutionized our society due to their self-configuring, infrastructure-less decentralized modes of communication and thus researchers have focused on finding better and better ways to fully utilize the potential of MANETs. The recent advent of modern machine learning techniques has made it possible to apply artificial intelligence to develop better protocols for this purpose. In this paper, we expand our previous work which developed a clustering algorithm that used weight-based parameters to select cluster heads and use Artificial Neural Network to train a model to accurately predict the scale of the weights required for different network topologies. The goal of this research is to train a model to be able to analyze input factors for a network in order to select best parameters for our clustering-based algorithm. This algorithm uses Artificial Neural Network to determine the importance of each parameter for a particular type of network in calculating acceptability of a node to become cluster head.
