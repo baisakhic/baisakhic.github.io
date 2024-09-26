@@ -95,9 +95,9 @@ project_category:
   personal:
     title: 'Personal Projects'    
     
-leadership_category:
-  engagement:
-    title: 'Engagement'
+engagement_category:
+  leadership:
+    title: 'Leadership'
   award:
     title: 'Awards'
   others:
@@ -242,7 +242,7 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
-  leadership:
+  engagement:
     output: true
     permalink: /:collection/:path/
   portfolio:

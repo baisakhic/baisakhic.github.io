@@ -1,11 +1,10 @@
 ---
 title: "Vice President"
 subtitle: "Computer Science Graduate Student Assoication"
-collection: leadership
-category: engagement
+collection: engagement
+category: leadership
 org: NC State University
-date: 2023-08-16
-
+date: 2023-03-11
 ---
 
 
