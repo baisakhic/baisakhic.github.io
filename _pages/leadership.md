@@ -11,7 +11,7 @@ author_profile: true
 {% if site.leadership_category %}
   {% for category in site.leadership_category  %}
     {% assign title_shown = false %}
-    {% for post in site.projects reversed %}
+    {% for post in site.leadership reversed %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
