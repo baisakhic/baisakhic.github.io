@@ -2,7 +2,7 @@
 title: "Guaranteeing Partial State Synchronization for UAV Platoon Under Message or UAV Loss"
 collection: publications
 category: publications
-permalink: guaranteeing_partial_sync
+permalink: publications/guaranteeing_partial_sync
 link: https://ieeexplore.ieee.org/abstract/document/10556347
 excerpt: 'In this paper, we have addressed the concerns of fallible communication and an unreliable system on UAV platoon coordination. We have studied how robustness may be designed in a multi-agent scenario with an arbitrary number of agents and then developed an algorithm which guarantees distributed partial state synchronization with bounded variance in number of states despite facing message loss or system failure in agents.'
 date: 2024-02-19
