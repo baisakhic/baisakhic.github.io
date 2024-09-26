@@ -4,7 +4,7 @@ collection: publications
 category: publications
 permalink: publications/dectection_communities
 link: https://ieeexplore.ieee.org/abstract/document/8936304
-excerpt: 'Sureveyed research works on Community Dectection in Large Scale Networks and cateogorized the results into different groups.'
+excerpt: 'A detailed study of both recent and popular research conducted on community detection in networks, categorized by the type of metric used. This work discusses the benefits and shortcomings of each metric and attempts to present a comprehensive summary.'
 date: 2019-10-17
 venue: 'IEEE 10th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)'
 paperurl: 'http://baisakhic.github.io/files/Communities-Paper.pdf'
