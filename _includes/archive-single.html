@@ -62,7 +62,7 @@
     <p style="margin-top: -10px;" class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' and post.collection != 'engagement' %}
     <p style="margin-top: -10px;" class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
-    {% else %}
+    {% elsif post.collection == 'engagement'  %}
 		</br>
 	{% endif %}
     
