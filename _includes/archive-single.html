@@ -29,7 +29,7 @@
 
     <h3 class="archive__item-title" itemprop="headline">
       {% if post.subtitle %}
-		<a href="#" rel="permalink">{{title}}, <span style="font-size: smaller;"><i>{{post.subtitle}}</i></span></a>
+		<a href="#" rel="permalink">{{post.title}}, <span style="font-size: smaller;"><i>{{post.subtitle}}</i></span></a>
 	  {% elsif post.link %}
         <a href="{{ base_path }}{{ post.url }}">{{ title }}</a> <a href="{{ post.link }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% elsif post.pagelink %}
