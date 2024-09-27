@@ -61,31 +61,31 @@ layout: default
         {% endif %}
 		-->
 		
-		{% if page.citation and page.paperurl and page.slidesurl and page.gitlink %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.gitlink }}">Github Link</a></p>
-		{% elsif page.citation and page.paperurl and page.slidesurl %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
-		{% elsif page.citation and page.paperurl and page.gitlink %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.gitlink }}">Github Link</a></p>
-		{% elsif page.citation and page.slidesurl and page.gitlink %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.gitlink }}">Github Link</a></p>
-		{% elsif page.citation and page.paperurl %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a></p>
-		{% elsif page.citation and page.slidesurl %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a></p>
-		{% elsif page.citation and page.gitlink %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.gitlink }}">Github Link</a></p>
-		{% elsif page.citation %}
-		  <p style="font-size: smaller">Citation: {{ page.citation }}</p>
-		{% elsif page.gitlink %}
-		  <p style="font-size: smaller"><a href=" {{ page.gitlink }} ">Github Link</a></p>
-		{% elsif page.paperurl %}
-		  <p style="font-size: smaller"><a href=" {{ page.paperurl }} ">Download Paper</a></p>
-		{% elsif page.slidesurl %}
-		  <p style="font-size: smaller">Download <a href="{{ page.slidesurl }}">Download Slides</a></p></p>
+		{% if post.citation and post.paperurl and post.slidesurl and post.link %}
+		  <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf"></i></a> <a href="{{ post.slidesurl }}"><i class="fas fa-file-powerpoint"></i></a> <a href="{{ post.link }}"><i class="fa-solid fa-link"></i></a></p>
+		{% elsif post.citation and post.paperurl and post.slidesurl %}
+		  <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf"></i></a> <a href="{{ post.slidesurl }}"><i class="fas fa-file-powerpoint"></i></a></p>
+		{% elsif post.citation and post.paperurl and post.link %}
+		  <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf"></i></a> <a href="{{ post.link }}"><i class="fa-solid fa-link"></i></a></p>
+		{% elsif post.citation and post.slidesurl and post.link %}
+		  <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}"><i class="fas fa-file-powerpoint"></i></a> <a href="{{ post.link }}"><i class="fa-solid fa-link"></i></a></p>
+		{% elsif post.citation and post.paperurl %}
+		  <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf"></i></a></p>
+		{% elsif post.citation and post.slidesurl %}
+		  <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}"><i class="fas fa-file-powerpoint"></i></a></p>
+		{% elsif post.citation and post.link %}
+		  <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.link }}"><i class="fa-solid fa-link"></i></a></p>
+		{% elsif post.citation %}
+		  <p style="font-size: smaller">Citation: {{ post.citation }}</p>
+		{% elsif post.link %}
+		  <p style="font-size: smaller"><a href=" {{ post.link }} "><i class="fa-solid fa-link"></i></a></p>
+		{% elsif post.paperurl %}
+		  <p style="font-size: smaller"><a href=" {{ post.paperurl }} "><i class="fa-solid fa-file-pdf"></i></a></p>
+		{% elsif post.slidesurl %}
+		  <p style="font-size: smaller">Download <a href="{{ post.slidesurl }}"><i class="fas fa-file-powerpoint"></i></a></p></p>
 		{% endif %}
 
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        <!--{% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}-->
       </section>
 
       <footer class="page__meta">
