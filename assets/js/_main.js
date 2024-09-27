@@ -18,6 +18,11 @@ $(document).ready(function(){
     if (didResize) {
       didResize = false;
       bumpIt();
+	  
+	  @media (min-device-width: 640px) {
+		.line_break{display:block;} 
+		}
+	  
     }
   }, 250);
   
