@@ -50,12 +50,13 @@
        <p style="font-size: smaller; margin-top: -3px"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
 	{% elsif post.collection == 'engagement' and post.date and post.present %}
 		<p style="font-size: smaller; margin-top: -3px"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B, %Y" }}</time> - PRESENT</p>
-		<p style="font-size: smaller; margin-top: -3px"> {{ post.org }}</p>
+		<p style="font-size: smaller; margin-top: -3px"> <i class="fa fa-solid fa-building-columns " aria-hidden="true"></i> {{ post.org }}</p>
 	{% elsif post.collection == 'engagement' and post.date and post.date2 %}
-		<p style="font-size: smaller; margin-top: -3px"> <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B, %Y" }}</time> - <time datetime="{{ post.date2 | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date2 | default: "1900-01-01" | date: "%B, %Y" }}</time></span></p>
-		<p style="font-size: smaller; margin-top: -3px">{{ post.org }}</p> 
+		<p style="font-size: smaller; margin-top: -3px"> <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B, %Y" }}</time> - <time datetime="{{ post.date2 | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date2 | default: "1900-01-01" | date: "%B, %Y" }}</time></p>
+		<p style="font-size: smaller; margin-top: -3px"> <i class="fa fa-solid fa-building-columns " aria-hidden="true"></i> {{ post.org }}</p> 
 	{% elsif post.collection == 'engagement' and post.date %}
-		<p style="font-size: smaller; margin-top: -3px"> <span style="float:left">{{ post.org }}</span> <span style="float:right"> <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B, %Y" }}</time></span></p>
+		<p style="font-size: smaller; margin-top: -3px"> <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B, %Y" }}</time></p>
+		<p style="font-size: smaller; margin-top: -3px"> <i class="fa fa-solid fa-building-columns " aria-hidden="true"></i> {{ post.org }}</p> 
 	{% elsif post.date %}
 	 <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
 	{% endif %}
