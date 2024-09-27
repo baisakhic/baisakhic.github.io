@@ -30,8 +30,8 @@
     <h3 class="archive__item-title" itemprop="headline">
       {% if post.subtitle %}
 		<a href="#" rel="permalink">{{post.title}}, <span style="font-size: smaller;"><i>{{post.subtitle}}</i></span></a>
-	  {% elsif post.link %}
-        <a href="{{ base_path }}{{ post.url }}">{{ title }}</a> <a href="{{ post.link }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+	  <!--{% elsif post.link %}
+        <a href="{{ base_path }}{{ post.url }}">{{ title }}</a> <a href="{{ post.link }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>-->
       {% elsif post.pagelink %}
 		<a href="{{ post.pagelink }}" rel="permalink">{{ title }}</a>
 	  {% else %}
@@ -66,39 +66,40 @@
     <p style="margin-top: -10px;" class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
 	{% endif %}
     
-	<!--
-	{% if post.citation and post.paperurl and post.slidesurl and post.gitlink %}
-      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.gitlink }}">Github Link</a></p>
+	
+	{% if post.citation and post.paperurl and post.slidesurl and post.link %}
+      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf"></i></a> | <a href="{{ post.slidesurl }}"><i class="fa-sharp fa-solid fa-file-ppt"></i></a> | <a href="{{ post.link }}"><i class="fa-solid fa-link"></i></a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl %}
-      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation and post.paperurl and post.gitlink %}
-      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.gitlink }}">Github Link</a></p>
-	{% elsif post.citation and post.slidesurl and post.gitlink %}
-      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.gitlink }}">Github Link</a></p>
+      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf"></i></a> | <a href="{{ post.slidesurl }}"><i class="fa-sharp fa-solid fa-file-ppt"></i></a></p>
+    {% elsif post.citation and post.paperurl and post.link %}
+      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf"></i></a> | <a href="{{ post.link }}"><i class="fa-solid fa-link"></i></a></p>
+	{% elsif post.citation and post.slidesurl and post.link %}
+      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}"><i class="fa-sharp fa-solid fa-file-ppt"></i></a> | <a href="{{ post.link }}"><i class="fa-solid fa-link"></i></a></p>
 	{% elsif post.citation and post.paperurl %}
-      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
+      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf"></i></a></p>
     {% elsif post.citation and post.slidesurl %}
-      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
-	{% elsif post.citation and post.gitlink %}
-      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.gitlink }}">Github Link</a></p>
+      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}"><i class="fa-sharp fa-solid fa-file-ppt"></i></a></p>
+	{% elsif post.citation and post.link %}
+      <p style="font-size: smaller">Citation: {{ post.citation }}<br /><a href="{{ post.link }}"><i class="fa-solid fa-link"></i></a></p>
     {% elsif post.citation %}
       <p style="font-size: smaller">Citation: {{ post.citation }}</p>
-    {% elsif post.gitlink %}
-      <p style="font-size: smaller"><a href=" {{ post.gitlink }} ">Github Link</a></p>
+    {% elsif post.link %}
+      <p style="font-size: smaller"><a href=" {{ post.link }} "><i class="fa-solid fa-link"></i></a></p>
 	{% elsif post.paperurl %}
-      <p style="font-size: smaller"><a href=" {{ post.paperurl }} ">Download Paper</a></p>
+      <p style="font-size: smaller"><a href=" {{ post.paperurl }} "><i class="fa-solid fa-file-pdf"></i></a></p>
     {% elsif post.slidesurl %}
-      <p style="font-size: smaller">Download <a href="{{ post.slidesurl }}">Download Slides</a></p></p>
+      <p style="font-size: smaller">Download <a href="{{ post.slidesurl }}"><i class="fa-sharp fa-solid fa-file-ppt"></i></a></p></p>
     {% endif %}
-	-->
 	
+	<!--
 	{% if post.paperurl and post.slidesurl %}
       <p style="font-size: smaller; margin-top: -20px;"><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.paperurl%}
       <p style="font-size: smaller; margin-top: -20px;"><a href="{{ post.paperurl }}">Download Paper</a></p>
 	{% elsif post.slidesurl%}
-      <p style="font-size: smaller; margin-top: -20px;">Download <a href="{{ post.slidesurl }}">Download Slides</a></p></p>
+      <p style="font-size: smaller; margin-top: -20px;"><a href="{{ post.slidesurl }}">Download Slides</a></p></p>
 	{% endif %}
+	-->
 	
   </article>
 </div>
