@@ -4,7 +4,7 @@ collection: publications
 category: publications
 permalink: publications/studying_effect_network
 link: https://dl.acm.org/doi/abs/10.1145/3539493.3539581
-excerpt: 'In this paper, have studied the dependance of message on coordinated mission planning by UAVs and investigated how delay might affect the correctness and completion of the task. To do this, we have used an exemplar mission of Plume Wrapping and developed an algorithm which cna be utilized by agents in a distributed manner to make autonomous decisions and surround the plume.'
+excerpt: 'In this paper, we have studied the dependance of message on coordinated mission planning by UAVs and investigated how delay might affect the correctness and completion of the task. To do this, we have used an exemplar mission of Plume Wrapping and developed an algorithm which can be utilized by agents in a distributed manner to make autonomous decisions and surround the plume.'
 date: 2023-12-18
 venue: 'Proceedings of the 2022 workshop on Eighth Workshop on Micro Aerial Vehicle Networks, Systems, and Applications'
 slidesurl: 'http://baisakhic.github.io/files/DroNet-Slides.pptx'
